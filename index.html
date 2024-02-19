@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
+          <title>JP assignment 5</title>
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+          <script src="https://cdn.tailwindcss.com"></script>
+          <link rel="stylesheet" href="style.css">
 </head>
 <body>
-          
+   <header class="pt-5 px-24">
+          <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li><a>About</a></li>
+                          <li><a>Destination</a></li>
+                          <li><a>Search</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-xl">P-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                          <li><a>Home</a></li>
+                          <li><a>About</a></li>
+                          <li><a>Destination</a></li>
+                          <li><a>Search</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="btn">Button</a>
+                    </div>
+                  </div>
+   </header>
+   <main class="px-24">
+          <section>
+          <div class="hero min-h-screen rounded-[32px]" style="background-image: url(images/banner.png);">
+                    <!-- <div class="hero-overlay"></div> -->
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-[40rem]">
+                        <h1 class="mb-5 text-5xl font-extrabold">End-to-End Travel with <br><span class="text-green-500"> P Paribahan</span></h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                        <button class="btn border-none text-black bg-green-600">Buy Tickets</button>
+                      </div>
+                    </div>
+                  </div>
+          </section>        
+          <!-- Coupon SEction -->
+          <section class="text-center mb-24">
+                    <h3 class="font-bold text-[40px] m-8">Best offers for you</h3>
+              <div class="flex justify-between gap-4 h-[220px] m-8">
+                <div class="bg-[#FFBF0F] flex flex-1 justify-items-center items-center rounded-[32px]">
+                    <p class="flex-1"><span class="font-black text-[40px]">15% OFF</span><br>
+                              <span class="font-semibold text-[20px]">on your next purchase</span><br>
+                              <span class="text-18px font-medium text-[#030712] text-opacity-50">use by January 2024</span></p>
+                    <p class="flex-1"><span class="font-bold text-[32px]">NEW15</span><br>
+                              <span class="text-18px font-medium text-[#030712] text-opacity-50">Coupon Code</span></p>
+                </div>  
+
+                <div class="bg-[#F78C9C] flex flex-1 justify-items-center items-center rounded-[32px]">
+                    <p class="flex-1"><span class="font-black text-[40px]">20% OFF</span><br>
+                              <span class="font-semibold text-[20px]">on your next purchase</span><br>
+                              <span class="text-18px font-medium text-[#030712] text-opacity-50">use by January 2024</span></p>
+                    <p class="flex-1"><span class="font-bold text-[32px]">Couple 20</span><br>
+                              <span class="text-18px font-medium text-[#030712] text-opacity-50">Coupon Code</span></p>
+                </div>    
+                    
+              </div>
+              <button class="btn border-green-300 border-2 text-green-600">See All Offers</button>
+          </section>
+          <section class="text-center  border-green-400 rounded-t-[50px] border-t-2 bg-[#F7F8F8]">
+                <h3 class="text-[40px] font-bold mt-14">P.H Paribahan</h3>
+                <p class="text-[18px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>    
+              <div class="flex mt-14">
+                 <div class="flex flex-1">
+                    <div  class="flex-1">
+                       <h3>Greenline Paribahan</h3>
+                       <p>Coach-009-WEB ! AC_Business</p>      
+                    </div>
+                    <div class="flex-1">
+                       <img src="images/seat-gray.png" alt="">
+                       <p><span></span>Seats left</p>     
+                    </div>
+                 </div>
+                 <div class="w-1/5 flex flex-col justify-center items-center">
+                    <img src="images/fare.png" alt="">
+                    <h3><span  class="text-[32px] font-bold">550 Taka</span> <br>Per Seat</h3>
+                 </div>
+              </div>      
+          </section>
+   </main>
+   <footer>
+
+   </footer>
+   <script src="Script/assignment.js"></script>
 </body>
 </html>
